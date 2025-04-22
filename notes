@@ -1,0 +1,47 @@
+// package net.engineeringdigest.journalApp.controller;
+
+// import java.util.ArrayList;
+// import java.util.HashMap;
+// import java.util.List;
+// import java.util.Map;
+
+// import org.springframework.web.bind.annotation.DeleteMapping;
+// import org.springframework.web.bind.annotation.GetMapping;
+// import org.springframework.web.bind.annotation.PathVariable;
+// import org.springframework.web.bind.annotation.PostMapping;
+// import org.springframework.web.bind.annotation.PutMapping;
+// import org.springframework.web.bind.annotation.RequestBody;
+// import org.springframework.web.bind.annotation.RequestMapping;
+// import org.springframework.web.bind.annotation.RestController;
+
+// import net.engineeringdigest.journalApp.entity.JournalEntry;
+
+// @RestController
+// @RequestMapping("/Journal")
+// public class JournalEntryController {
+
+//     private Map<String,JournalEntry> journalEntries = new HashMap<>();
+    
+//     @GetMapping("/get-All")
+//     public List<JournalEntry> getAll(){
+//         return new ArrayList<>(journalEntries.values());
+//     }
+//     @GetMapping("/get/{myId}")
+//     public JournalEntry getAll(@PathVariable Long myId){
+//         return journalEntries.get(myId);
+//     }
+//     @PostMapping
+//     public boolean create(@RequestBody JournalEntry myEntry){
+//         journalEntries.put(myEntry.getId(),myEntry);
+//         return true;
+//     }
+//     @DeleteMapping("/dlt/{myId}")
+//     public JournalEntry deleteJournalEntry(@PathVariable String myId){
+//         return journalEntries.remove(myId);
+//     }
+//     @PutMapping("/id/{myId}")
+//     public JournalEntry updateJournalEntry(@PathVariable String myId,@RequestBody JournalEntry myEntry){
+//        return journalEntries.put(myId,myEntry);
+//     }
+
+// }
